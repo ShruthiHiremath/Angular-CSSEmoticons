@@ -5,7 +5,7 @@ Originally forked from  http://github.com/JangoSteve/jQuery-CSSEmoticons
 
 In the HTML file we have declared a html app store . The controller StoreController from the javascript file is given an alias store. Include the required javascript, css files.The javascript file gem1.js used is described below. The css file required essentially for the special emoticons is cssemoticons.css. The angular-emoticon.js is the filter. This file has to be defined after including the gem1.js. The msg variable contains the raw format of the text which has to be emoticonized.
 
-```
+```HTML
 <!DOCTYPE html>
 <html ng-app="store">
 <body  ng-controller="StoreController as store">
@@ -19,7 +19,7 @@ In the HTML file we have declared a html app store . The controller StoreControl
 
 In the javascript file declare a controller corresponding to a module. Here we have defined the StoreController corresponding to the angular module store and stored inside the variable app. The emoticonizeFilter is the filter required for converting the text to emoticons. The parameters to the function defined within the controller are scope and sce. The scope is used to define the initial value of the bool variable showEmoticons as well as to store the message that needs to be converted.The sce is used to convert the user text into text that can be trusted as HTML. A self call on this function is performed.
 
-```
+```javascript
 (function() {
   var app=angular.module('store',['emoticonizeFilter']);
   
