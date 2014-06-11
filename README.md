@@ -36,4 +36,4 @@ app.js
 }).call(this);
 ```
 
-  In the angular-modified-emoticon.js file we take the user text as the input and try matching it with the pre-defined emoticons using regular expressions. If any such symbol is found it is replaced with the corresponding emoticon.The displayed message contains the emoticons. This works for escape characters, two characters, three characters as well as special characters.
+  In the angular-modified-emoticon.js file we take the user text as the input and try matching it with the pre-defined emoticons using regular expressions. If any such symbol is found it is replaced with the corresponding emoticon.The displayed message contains the emoticons. This works for escape characters, two character emoticons, three character emoticons as well as special emoticons.
