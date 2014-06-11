@@ -1,5 +1,4 @@
 
-*Currently special emotions are not working, hoping to patch that later*
 
 Originally forked from  http://github.com/JangoSteve/jQuery-CSSEmoticons
 
@@ -37,4 +36,4 @@ app.js
 }).call(this);
 ```
 
-  In the angular-emoticon.js file we take the user text as the input and try matching it with the pre-defined emoticons using regular expressions. If any such symbol is found it is replaced with the corresponding emoticon.The displayed message contains the emoticons.
+  In the angular-modified-emoticon.js file we take the user text as the input and try matching it with the pre-defined emoticons using regular expressions. If any such symbol is found it is replaced with the corresponding emoticon.The displayed message contains the emoticons. This works for escape characters, two characters, three characters as well as special characters.
