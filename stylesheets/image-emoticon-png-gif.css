@@ -1,0 +1,76 @@
+.css-emoticon {
+  font-size: 0px;
+  display:inline-block;
+  height:15px;
+  width: 15px;
+  vertical-align:middle;
+}
+.lol {
+  background: url('smilies/icon_lol.gif');
+}
+.oops{
+  background: url('smilies/icon_redface.gif');
+}
+.cry{
+ background: url('smilies/icon_cry.gif');
+}
+.roll{
+background: url('smilies/icon_rolleyes.gif');
+} 
+}
+.smile{
+  background: url('smilies/sprites.png');
+  background-position: -16px -18px ;
+}
+.twisted {
+  background: url('smilies/sprites.png');
+  background-position: -68px -118px ;
+}
+.biggrin{
+  background: url('smilies/sprites.png');
+  background-position: -69px -18px ;
+}
+.sad{
+  background: url('smilies/sprites.png');
+  background-position: -116px -18px ;
+}
+
+.eek{
+  background: url('smilies/sprites.png');
+  background-position: -167px -18px ;
+}
+
+.confused{
+  background: url('smilies/sprites.png');
+  background-position: -218px -18px ;
+}
+
+.cool{
+  background: url('smilies/sprites.png');
+  background-position: -16px -68px ;
+}
+
+.mad{
+  background: url('smilies/sprites.png');
+  background-position: -68px -68px ;
+}
+
+.razz{
+  background: url('smilies/sprites.png');
+  background-position: -118px -68px ;
+}
+
+.neutral{
+  background: url('smilies/sprites.png');
+  background-position: -168px -68px ;
+}
+
+.wink{
+  background: url('smilies/sprites.png');
+  background-position: -218px -68px ;
+}
+
+.evil{
+   background: url('smilies/sprites.png');
+  background-position: -15px -118px ;
+}
