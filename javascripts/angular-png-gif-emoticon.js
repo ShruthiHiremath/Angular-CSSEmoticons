@@ -106,7 +106,13 @@
       ">:-(": {
         cssClass: "evil"
       },
+       ":evil:": {
+        cssClass: "evil"
+      },
       ">:-D": {
+        cssClass: "twisted"
+      },
+       ":twisted:": {
         cssClass: "twisted"
       },
       ":lol:": {
