@@ -2,10 +2,8 @@
   var emoticonize, filters;
 
   emoticonize = function($sce) {
-    var emoticon, escapeCharacters, exclude, excludeArray, index, preMatch, specialEmoticons, specialRegex, threeChar, threeCharacterEmoticons, twoChar, twoCharacterEmoticons, _i, _j, _k, _len, _len1, _len2;
+    var emoticon, escapeCharacters, exclude, excludeArray, preMatch, specialEmoticons, specialRegex;
     escapeCharacters = [")", "(", "*", "[", "]", "{", "}", "|", "^", "<", ">", "\\", "?", "+", "=", "."];
-    threeCharacterEmoticons = [":{)", ":-)", ":o)", ":c)", ":^)", ":-D", ":-(", ":-9", ";-)", ":-P", ":-p", ":-Þ", ":-b", ":-O", ":-/", ":-X", ":-#", ":'(", "B-)", "8-)", ";*(", ":-*", ":-\\", "?-)", ": )", ": ]", "= ]", "= )", "8 )", ": }", ": D", "8 D", "X D", "x D", "= D", ": (", ": [", ": {", "= (", "; )", "; ]", "; D", ": P", ": p", "= P", "= p", ": b", ": Þ", ": O", "8 O", ": /", "= /", ": S", ": #", ": X", "B )", ": |", ": \\", "= \\", ": *", ": &gt;", ": &lt;"];
-    twoCharacterEmoticons = [":)", ":]", "=]", "=)", "8)", ":}", ":D", ":(", ":[", ":{", "=(", ";)", ";]", ";D", ":P", ":p", "=P", "=p", ":b", ":Þ", ":O", ":/", "=/", ":S", ":#", ":X", "B)", ":|", ":\\", "=\\", ":*", ":&gt;", ":&lt;"];
     specialEmoticons = {
       ":-)": {
         cssClass: "smile"
@@ -50,6 +48,9 @@
         cssClass: "confused"
       },
       ":???:": {
+        cssClass: "confused"
+      },
+      ":confused:": {
         cssClass: "confused"
       },
       "8)": {
@@ -155,19 +156,7 @@
     };
     specialRegex = new RegExp('(\\' + escapeCharacters.join('|\\') + ')', 'g');
     preMatch = '(^|[\\s\\0])';
-    for (index = _i = 0, _len = threeCharacterEmoticons.length; _i < _len; index = ++_i) {      
-      threeChar = threeCharacterEmoticons[index];          
-      threeChar = threeChar.replace(specialRegex, '\\$1');
-      threeCharacterEmoticons[index] = new RegExp(preMatch + '(' + threeChar + ')', 'g');      
-    }
-
-    for (index = _j = 0, _len1 = twoCharacterEmoticons.length; _j < _len1; index = ++_j) {
-           twoChar = twoCharacterEmoticons[index];
-      twoChar = twoChar.replace(specialRegex, '\\$1');
-      twoCharacterEmoticons[index] = new RegExp(preMatch + '(' + twoChar + ')', 'g');
-    }
-   
-   var specialEmoticonsObject =  {};
+    var specialEmoticonsObject =  {};
    for(emoticon in specialEmoticons)
    {  
       emoticon_new = emoticon.replace(specialRegex, '\\$1'); 
@@ -184,21 +173,13 @@
         return text;
       }
       text=text.valueOf();
-     cssClass = 'css-emoticon';
+      cssClass = 'css-emoticon';
             
       for (emoticon in specialEmoticonsObject) {
         specialCssClass = cssClass + " " + specialEmoticons[emoticon].cssClass;
-
         text = text.replace(specialEmoticonsObject[emoticon], "$1<span class='" + specialCssClass + "'>$2</span>");
       }
-      for (_m = 0, _len4 = threeCharacterEmoticons.length; _m < _len4; _m++) {
-        threeChar = threeCharacterEmoticons[_m];
-        text = text.replace(threeChar, "$1<span class='" + cssClass + "'>$2</span>");
-      }
-      for (_n = 0, _len5 = twoCharacterEmoticons.length; _n < _len5; _n++) {
-        twoChar = twoCharacterEmoticons[_n];
-        text = text.replace(twoChar, "$1<span class='" + cssClass + " spaced-emoticon'>$2</span>");
-      }
+     
       return $sce.trustAsHtml(text);
     };
   };
