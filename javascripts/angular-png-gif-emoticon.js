@@ -37,7 +37,7 @@
       "8O": {
         cssClass: "shock"
       },
-      ":8-O": {
+      "8-O": {
         cssClass: "shock"
       },
       ":shock:": {
