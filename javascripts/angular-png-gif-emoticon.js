@@ -120,7 +120,32 @@
       },
       ":roll:": {
         cssClass: "roll"
+      },
+      ":eek:": {
+        cssClass: "eek"
+      },
+      ":o": {
+        cssClass: "eek"
+      },
+      ":-o": {
+        cssClass: "eek"
+      },
+      ":!:": {
+        cssClass: "exclaim"
+      },
+       ":?:": {
+        cssClass: "question"
+      },
+      ":idea:": {
+        cssClass: "idea"
+      },
+      ":arrow:": {
+        cssClass: "arrow"
+      },
+      ":mrgreen:": {
+        cssClass: "mrgreen"
       }
+
     };
     specialRegex = new RegExp('(\\' + escapeCharacters.join('|\\') + ')', 'g');
     preMatch = '(^|[\\s\\0])';

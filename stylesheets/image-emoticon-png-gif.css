@@ -17,14 +17,25 @@
 .roll{
 background: url('../images/icon_rolleyes.gif');
 } 
+.exclaim {
+  background: url('../images/icon_exclaim.gif');
+}
+.question {
+  background: url('../images/icon_quesrion.gif');
+}
+.idea {
+  background: url('../images/icon_idea.gif');
+}
+.arrow {
+  background: url('../images/icon_arrow.gif');
+}
+.mrgreen{
+  background: url('../images/icon_mrgreen.gif');
+}
 
 .smile{
   background: url('../images/sprites.png');
   background-position: -16px -18px ;
-}
-.twisted {
-  background: url('../images/sprites.png');
-  background-position: -68px -118px ;
 }
 .biggrin{
   background: url('../images/sprites.png');
@@ -35,7 +46,7 @@ background: url('../images/icon_rolleyes.gif');
   background-position: -116px -18px ;
 }
 
-.eek{
+.shock{
   background: url('../images/sprites.png');
   background-position: -167px -18px ;
 }
@@ -73,4 +84,12 @@ background: url('../images/icon_rolleyes.gif');
 .evil{
    background: url('../images/sprites.png');
   background-position: -15px -118px ;
+}
+.twisted {
+  background: url('../images/sprites.png');
+  background-position: -68px -118px ;
+}
+.eek {
+  background: url('../images/sprites.png');
+  background-position: -118px -118px ;
 }
