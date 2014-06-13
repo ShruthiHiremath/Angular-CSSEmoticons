@@ -80,16 +80,16 @@
       ">:-D": {
         cssClass: "twisted"
       },
-      "lol": {
+      ":lol:": {
         cssClass: "lol"
       },
-      "oops": {
+      ":oops:": {
         cssClass: "oops"
       },
-      "cry": {
+      ":cry:": {
         cssClass: "cry"
       },
-      "roll": {
+      ":roll:": {
         cssClass: "roll"
       }
     };
