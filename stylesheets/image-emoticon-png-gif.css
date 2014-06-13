@@ -1,31 +1,76 @@
+.css-emoticon {
+  font-size: 0px;
+  display:inline-block;
+  height:15px;
+  width: 15px;
+  vertical-align:middle;
+}
+.lol {
+  background: url('smilies/icon_lol.gif');
+}
+.oops{
+  background: url('smilies/icon_redface.gif');
+}
+.cry{
+ background: url('smilies/icon_cry.gif');
+}
+.roll{
+background: url('smilies/icon_rolleyes.gif');
+} 
 
-.css-emoticon.arrow, .css-emoticon.biggrin, .css-emoticon.confused, .css-emoticon.cool, .css-emoticon.cry, 
-.css-emoticon.eek, .css-emoticon.evil, .css-emoticon.exclaim, .css-emoticon.idea, .css-emoticon.lol, 
-.css-emoticon.mad, .css-emoticon.mrgreen, .css-emoticon.neutral, .css-emoticon.question, .css-emoticon.razz, 
-.css-emoticon.redface, .css-emoticon.rolleyes, .css-emoticon.sad, .css-emoticon.smile, .css-emoticon.surprised, 
-.css-emoticon.twisted, .css-emoticon.wink
-{ width:15px, height: 15px, display: inline-block; background: url('../images/download.gif') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
- 
-.css-emoticon.arrow { background-position: -2px -0px; }
-.css-emoticon.biggrin { background-position: -19px -0px; }
-.css-emoticon.confused { background-position: -36px -0px; }
-.css-emoticon.cool { background-position: -53px -0px; }
-.css-emoticon.cry { background-position: -2px -17px; }
-.css-emoticon.eek { background-position: -19px -17px; }
-.css-emoticon.evil { background-position: -36px -17px; }
-.css-emoticon.exclaim { background-position: -53px -17px; }
-.css-emoticon.idea { background-position: -2px -34px; }
-.css-emoticon.lol { background-position: -19px -34px; }
-.css-emoticon.mad { background-position: -36px -34px; }
-.css-emoticon.mrgreen { background-position: -53px -34px; }
-.css-emoticon.neutral { background-position: -2px -51px; }
-.css-emoticon.question { background-position: -19px -51px; }
-.css-emoticon.razz { background-position: -36px -51px; }
-.css-emoticon.redface { background-position: -53px -51px; }
-.css-emoticon.rolleyes { background-position: -2px -68px; }
-.css-emoticon.sad { background-position: -19px -68px; }
-.css-emoticon.smile { background-position: -36px -68px; }
-.css-emoticon.surprised { background-position: -53px -68px; }
-.css-emoticon.twisted { background-position: -2px -85px; }
-.css-emoticon.wink { background-position: -19px -85px; }
+.smile{
+  background: url('smilies/sprites.png');
+  background-position: -16px -18px ;
+}
+.twisted {
+  background: url('smilies/sprites.png');
+  background-position: -68px -118px ;
+}
+.biggrin{
+  background: url('smilies/sprites.png');
+  background-position: -69px -18px ;
+}
+.sad{
+  background: url('smilies/sprites.png');
+  background-position: -116px -18px ;
+}
 
+.eek{
+  background: url('smilies/sprites.png');
+  background-position: -167px -18px ;
+}
+
+.confused{
+  background: url('smilies/sprites.png');
+  background-position: -218px -18px ;
+}
+
+.cool{
+  background: url('smilies/sprites.png');
+  background-position: -16px -68px ;
+}
+
+.mad{
+  background: url('smilies/sprites.png');
+  background-position: -68px -68px ;
+}
+
+.razz{
+  background: url('smilies/sprites.png');
+  background-position: -118px -68px ;
+}
+
+.neutral{
+  background: url('smilies/sprites.png');
+  background-position: -168px -68px ;
+}
+
+.wink{
+  background: url('smilies/sprites.png');
+  background-position: -218px -68px ;
+}
+
+.evil{
+   background: url('smilies/sprites.png');
+  background-position: -15px -118px ;
+}
