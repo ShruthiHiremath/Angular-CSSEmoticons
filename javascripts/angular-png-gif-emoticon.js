@@ -13,10 +13,16 @@
       ":)": {
         cssClass: "smile"
       },
+      ":smile:": {
+        cssClass: "smile"
+      },
       ":D": {
         cssClass: "biggrin"
       },
       ":-D": {
+        cssClass: "biggrin"
+      },
+      ":grin:": {
         cssClass: "biggrin"
       },
       ":(": {
@@ -25,17 +31,25 @@
       ":-(": {
         cssClass: "sad"
       },
-
-      ":o": {
-        cssClass: "eek"
+      ":sad:": {
+        cssClass: "sad"
       },
-      ":-o": {
-        cssClass: "eek"
+      "8O": {
+        cssClass: "shock"
+      },
+      ":8-O": {
+        cssClass: "shock"
+      },
+      ":shock:": {
+        cssClass: "shock"
       },
       ":?": {
         cssClass: "confused"
       },
       ":-?": {
+        cssClass: "confused"
+      },
+      ":???:": {
         cssClass: "confused"
       },
       "8)": {
@@ -44,10 +58,16 @@
       "8-)": {
         cssClass: "cool"
       },
+      ":cool:": {
+        cssClass: "cool"
+      },
       ":x": {
         cssClass: "mad"
       },
       ":-x": {
+        cssClass: "mad"
+      },
+      ":mad:": {
         cssClass: "mad"
       },
       ":P": {
@@ -56,16 +76,25 @@
       ":-P": {
         cssClass: "razz"
       },
+      ":razz:": {
+        cssClass: "razz"
+      },
       ":|": {
         cssClass: "neutral"
       },
       ":-|": {
         cssClass: "neutral"
       },
+      ":neutral:": {
+        cssClass: "neutral"
+      },
       ";)": {
         cssClass: "wink"
       },
       ";-)": {
+        cssClass: "wink"
+      },
+      ":wink:": {
         cssClass: "wink"
       },
       ">:(": {
@@ -80,16 +109,16 @@
       ">:-D": {
         cssClass: "twisted"
       },
-      "lol": {
+      ":lol:": {
         cssClass: "lol"
       },
-      "oops": {
+      ":oops:": {
         cssClass: "oops"
       },
-      "cry": {
+      ":cry:": {
         cssClass: "cry"
       },
-      "roll": {
+      ":roll:": {
         cssClass: "roll"
       }
     };
